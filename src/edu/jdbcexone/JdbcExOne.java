@@ -1,14 +1,31 @@
 package edu.jdbcexone;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class JdbcExOne {
+    private static void printData(
+            ResultSet srs, String col1, String col2, String col3) throws SQLException {
+        System.out.println("name\t|\t\tid\t\t|\t   dept");
+        System.out.println("=======================================");
+        while (srs.next()) {
+            if (!col1.equals(""))
+                System.out.print(srs.getString("name"));
+            if (!col2.equals(""))
+                System.out.print("\t|\t" +
+                        srs.getString("id"));
+            if (!col3.equals(""))
+                System.out.println("\t|\t" +
+                        srs.getString("dept"));
+            else
+                System.out.println();
+        }//end of while(rs.next() )
+    }
+
     public static void main(String[] args){
         System.out.println("JDBC Start");
 
         Connection conn = null;
+        Statement stmt = null;
 
         try{
             //forName은 jdbc드라이버에 접속할 수 있도록 해줌
@@ -22,6 +39,9 @@ public class JdbcExOne {
 
             if (conn != null){
                 System.out.println("DB 연결 완료");
+                stmt = conn.createStatement();
+                ResultSet srs = stmt.executeQuery("select * from student");
+                printData(srs, "name", "id", "dept");
             }
 
         }catch (ClassNotFoundException e){
@@ -30,6 +50,7 @@ public class JdbcExOne {
             System.out.println("DB 연결 오류");
         }finally{
             try{
+                stmt.close();
                 conn.close();
             }catch (Exception e){
                 System.out.println(e.getMessage());
