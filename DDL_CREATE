@@ -1,0 +1,23 @@
+create database Bookstore;
+
+use Bookstore;
+
+create table NewBook( 
+bookid 		int 		primary key,
+bookname 	varchar(20) not null,
+publish 	varchar(20) unique,
+price 		int 		default 10000 	check(price > 1000));
+
+create table NewCustomer(
+custid 		int 		primary key,
+name		varchar(40),
+address		varchar(40),
+phone		varchar(30));
+
+create table NewOrders(
+orderid		int 		primary key,
+cutid		int 		not null,
+bookid 		int	 		not null,
+saleprice	int,
+orderdate	date,
+foreign key(cutid) references NewCustomer(custid) on delete cascade);
