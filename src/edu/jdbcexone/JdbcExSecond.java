@@ -24,26 +24,26 @@ public class JdbcExSecond {
                 System.out.println("DB 연결 완료");
                 stmt = conn.createStatement();
                 System.out.println("---------------------------------------------");
-                System.out.println("\t\t전체 레코드 검색\n");
+                System.out.println("\t\t\t전체 레코드 검색\n");
                 printData(stmt);
 
                 stmt.executeUpdate(
                         "update student set dept = '체육학과' where id = '12192261'");
                 System.out.println("---------------------------------------------");
-                System.out.println("\t\t\t레코드 변경 후\n");
+                System.out.println("\t\t\t\t레코드 변경 후\n");
                 printData(stmt);
 
                 stmt.executeUpdate(
                         "delete from student where id = '12433875'");
                 System.out.println("--------------------------------------------");
-                System.out.println("\t\t\t레코드 삭제 후\n");
+                System.out.println("\t\t\t\t레코드 삭제 후\n");
                 printData(stmt);
 
 
                 stmt.executeUpdate(
                         "insert into student(name, dept, id) value ('꼬물이', '꼬물꼬물학과', '12433875')");
                 System.out.println("---------------------------------------------");
-                System.out.println("\t\t\t레코드 삽입 후\n");
+                System.out.println("\t\t\t\t레코드 삽입 후\n");
                 printData(stmt);
 
             }
@@ -65,7 +65,7 @@ public class JdbcExSecond {
         ResultSet srs = pstatement.executeQuery("select * from student"); // 테이블의 모든 데이터 검색
 
         while (srs.next()) {
-            System.out.print(srs.getString("name"));
+            System.out.print(srs.getString("name")+"\t");
             System.out.print("\t|\t" + srs.getString("id"));
             System.out.println("\t|\t" + srs.getString("dept"));
         }  //end of while(rs.next() )
