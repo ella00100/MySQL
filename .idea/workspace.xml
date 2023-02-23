@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/edu/jdbcexone/BookSearchUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/jdbcexone/BookInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/jdbcexone/BookInsert.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +47,22 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BookInsert">
+  <component name="RunManager" selected="Application.BookSearchUpdate">
     <configuration name="BookInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.BookInsert" />
+      <module name="JdbcExOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.jdbcexone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookSearchUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.BookSearchUpdate" />
       <module name="JdbcExOne" />
       <extension name="coverage">
         <pattern>
@@ -89,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookSearchUpdate" />
         <item itemvalue="Application.BookInsert" />
         <item itemvalue="Application.JdbcExSecond" />
         <item itemvalue="Application.JdbcExOne" />
