@@ -3,6 +3,7 @@ package edu.jdbcexone;
 import java.sql.*;
 
 public class JdbcExOne {
+
     private static void printData(
             ResultSet srs, String col1, String col2, String col3, String col4, String col5, String col6, String col7 ) throws SQLException {
         while (srs.next()) {
@@ -50,8 +51,17 @@ public class JdbcExOne {
             if (conn != null){
                 System.out.println("DB 연결 완료");
                 stmt = conn.createStatement();
+                System.out.println("-----------------------------------------------------------------------");
+                System.out.println("                              전체 레코드 검색                            \n");
                 ResultSet srs = stmt.executeQuery("select * from usertbl");
                 printData(srs, "userID", "name", "birthYear","address","mobile1","mobile2", "mDate" );
+
+                System.out.println();
+                System.out.println("-----------------------------------------------------------------------");
+                System.out.println("                              특정 레코드 검색                            \n");
+                ResultSet s2 = stmt.executeQuery("select * from usertbl where name like '%김%'");
+                printData(s2,"userID", "name", "birthYear","address","mobile1","mobile2", "mDate" );
+
             }
 
         }catch (ClassNotFoundException e){
