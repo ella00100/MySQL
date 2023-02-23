@@ -4,22 +4,6 @@ import java.sql.*;
 
 public class JdbcExSecond {
 
-    private static void printData(
-            ResultSet srs, String col1, String col2, String col3) throws SQLException {
-        while (srs.next()) {
-            if (!col1.equals(""))
-                System.out.print(srs.getString("name"));
-            if (!col2.equals(""))
-                System.out.printf("\t|%10s",
-                        srs.getString("dept"));
-            if (!col3.equals(""))
-                System.out.println("\t|\t" +
-                        srs.getString("id"));
-            else
-                System.out.println();
-        }//end of while(rs.next() )
-    }
-
     public static void main(String[] args){
         System.out.println("JDBC Start");
 
@@ -41,23 +25,26 @@ public class JdbcExSecond {
                 stmt = conn.createStatement();
                 System.out.println("---------------------------------------------");
                 System.out.println("\t\t전체 레코드 검색\n");
-                ResultSet srs = stmt.executeQuery("select * from student");
-                printData(srs, "name", "dept", "id" );
+                printData(stmt);
+
+                stmt.executeUpdate(
+                        "update student set dept = '체육학과' where id = '12192261'");
+                System.out.println("---------------------------------------------");
+                System.out.println("\t\t\t레코드 변경 후\n");
+                printData(stmt);
 
                 stmt.executeUpdate(
                         "delete from student where id = '12433875'");
                 System.out.println("--------------------------------------------");
                 System.out.println("\t\t\t레코드 삭제 후\n");
-                ResultSet s2 = stmt.executeQuery("select * from student");
-                printData(s2, "id", "dept", "name" );
+                printData(stmt);
 
 
                 stmt.executeUpdate(
                         "insert into student(name, dept, id) value ('꼬물이', '꼬물꼬물학과', '12433875')");
                 System.out.println("---------------------------------------------");
                 System.out.println("\t\t\t레코드 삽입 후\n");
-                ResultSet s3 = stmt.executeQuery("select * from student");
-                printData(s3, "id", "dept", "name" );
+                printData(stmt);
 
             }
         }catch (ClassNotFoundException e){
@@ -73,4 +60,14 @@ public class JdbcExSecond {
             }
         }
     }
+    private static void printData(Statement pstatement)
+            throws SQLException {
+        ResultSet srs = pstatement.executeQuery("select * from student"); // 테이블의 모든 데이터 검색
+
+        while (srs.next()) {
+            System.out.print(srs.getString("name"));
+            System.out.print("\t|\t" + srs.getString("id"));
+            System.out.println("\t|\t" + srs.getString("dept"));
+        }  //end of while(rs.next() )
+    }  // end of printData
 }

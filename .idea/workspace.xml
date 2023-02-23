@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/jdbcexone/JdbcExSecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/jdbcexone/JdbcExSecond.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JdbcExSecond">
     <configuration name="JdbcExOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.JdbcExOne" />
       <module name="JdbcExOne" />
@@ -60,8 +61,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcExSecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.JdbcExSecond" />
+      <module name="JdbcExOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.jdbcexone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JdbcExSecond" />
         <item itemvalue="Application.JdbcExOne" />
       </list>
     </recent_temporary>
