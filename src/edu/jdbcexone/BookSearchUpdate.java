@@ -33,6 +33,7 @@ public class BookSearchUpdate {
                     System.out.println("\t\t\t\t\t레코드 검색 결과\n");
                     System.out.println("ID\t\t 제목\t\t\t\t\t 출판사 \t\t\t\t\t 작가");
                     printData(stmt);
+
                 }
                 else if (menu ==2){
                     System.out.println("------------------------------------------------------------------");
