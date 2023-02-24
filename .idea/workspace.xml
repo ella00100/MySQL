@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="" />
+    <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/BookDBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/book/BookDBManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,14 +41,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/MySQL/JDBCEx/JdbcExOne",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Program Files/Java/jdk-19",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BookDBManager">
+  <component name="RunManager" selected="Application.BookDBSearchAndUpdate">
     <configuration name="BookDBDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="book.BookDBDelete" />
       <module name="JdbcExOne" />
@@ -85,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookSearchUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.BookSearchUpdate" />
+    <configuration name="BookInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.BookInsert" />
       <module name="JdbcExOne" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookDBSearchAndUpdate" />
+        <item itemvalue="Application.BookInsert" />
         <item itemvalue="Application.BookDBManager" />
         <item itemvalue="Application.book.BookInsert" />
         <item itemvalue="Application.BookDBDelete" />
-        <item itemvalue="Application.BookDBSearchAndUpdate" />
-        <item itemvalue="Application.BookSearchUpdate" />
       </list>
     </recent_temporary>
   </component>

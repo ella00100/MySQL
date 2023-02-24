@@ -27,6 +27,7 @@ public class BookDBManager {
 
             int choice = 1;
             while (choice != 4) {
+                System.out.println();
                 System.out.print("추가(1),삭제(2), 수정(3), 끝내기(4)>>");
                 choice = Integer.parseInt(sin.nextLine());
                 switch (choice) {
@@ -89,7 +90,7 @@ public class BookDBManager {
             String publisher = sin.nextLine();
             System.out.print("작가>>");
             String author = sin.nextLine();
-            stmt.executeUpdate("insert into book (id, title, publisher, author) values("+ id++ +",'" + title + "','" + publisher + "','" + author + "');"); // 레코드 추가
+            stmt.executeUpdate("insert into book (id, title, publisher, author) values("+ id +",'" + title + "','" + publisher + "','" + author + "');"); // 레코드 추가
             printTable(stmt);
         } catch (SQLException e) {
             System.out.println("레코드 추가 에러");
@@ -99,11 +100,12 @@ public class BookDBManager {
     // 레코드의 각 열의 값 화면에 출력
     private static void printTable(Statement stmt) {
         ResultSet srs;
-        System.out.printf("%4s|%-30s|%-30s|%-10s\n", "id","title", "publisher", "author");
+        System.out.printf("%4s |%-29s|%-28s|%-10s\n", "ID","제목", "출판사", "작가");
+        System.out.println("-----------------------------------------------------------------------------------");
         try {
             srs = stmt.executeQuery("select * from book");
             while (srs.next()) {
-                System.out.printf("%4s|%-30s|%-30s|%-10s\n", new String(srs.getString("id")), srs.getString("title"), srs.getString("publisher"), srs.getString("author"));
+                System.out.printf("%4s |%-30s|%-30s|%-10s\n", new String(srs.getString("id")), srs.getString("title"), srs.getString("publisher"), srs.getString("author"));
             }
         } catch (SQLException e) {
             System.out.println("SQL 실행 에러");
