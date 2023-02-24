@@ -3,7 +3,7 @@ package edu.jdbcexone;
 import java.sql.*;
 import java.util.Scanner;
 
-public class BookSearchUpdate {
+public class BookControl {
     public static void main(String[] args){
         System.out.println("JDBC Start");
 

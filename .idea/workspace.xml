@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/jdbcexone/BookSearchUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/jdbcexone/BookSearchUpdate.java" afterDir="false" />
-    </list>
+    <list default="true" id="045d538e-39fc-4020-a7d8-e5de09816ea6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/MySQL/JDBCEx/JdbcExOne",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -47,9 +45,9 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BookDBSearchAndUpdate">
-    <configuration name="BookDBSearchAndUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="book.BookDBSearchAndUpdate" />
+  <component name="RunManager" selected="Application.BookDBManager">
+    <configuration name="BookDBDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="book.BookDBDelete" />
       <module name="JdbcExOne" />
       <extension name="coverage">
         <pattern>
@@ -61,12 +59,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.BookInsert" />
+    <configuration name="BookDBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="book.BookDBManager" />
       <module name="JdbcExOne" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.jdbcexone.*" />
+          <option name="PATTERN" value="book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDBSearchAndUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="book.BookDBSearchAndUpdate" />
+      <module name="JdbcExOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="book.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,25 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcExOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.JdbcExOne" />
+    <configuration name="book.BookInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="book.BookInsert" />
       <module name="JdbcExOne" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.jdbcexone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcExSecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.jdbcexone.JdbcExSecond" />
-      <module name="JdbcExOne" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.jdbcexone.*" />
+          <option name="PATTERN" value="book.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookDBManager" />
+        <item itemvalue="Application.book.BookInsert" />
+        <item itemvalue="Application.BookDBDelete" />
         <item itemvalue="Application.BookDBSearchAndUpdate" />
         <item itemvalue="Application.BookSearchUpdate" />
-        <item itemvalue="Application.BookInsert" />
-        <item itemvalue="Application.JdbcExSecond" />
-        <item itemvalue="Application.JdbcExOne" />
       </list>
     </recent_temporary>
   </component>
